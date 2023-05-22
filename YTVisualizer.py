@@ -66,26 +66,26 @@ def SplashScreen():
     progress.place(x=-10,y=235)
 
     a = '#1F6AA5'
-    Frame(w,width=427,height=241,bg=a).place(x=0,y=0)  #249794
+    Frame(w,width=427,height=241,bg=a).place(x=0,y=0) 
     b1=Button(w,width=10,height=1,text='Get Started',command=bar,border=0,fg=a,bg='white')
     b1.place(x=170,y=200)
 
     l1=Label(w,text='YouTube',fg='white',bg=a)
     lst1=('Calibri (Body)',20,'bold')
     l1.config(font=lst1)
-    l1.place(x=230,y=77)#place(x=50,y=80)
+    l1.place(x=230,y=77)
     
     pls = "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"
-    #img = ImageTk.PhotoImage(Image.open("logo small.png"))
+
     img = PhotoImage(data=pls)
 
     panel = Label(w, image=img, width=150,height=150)
-    panel.place(x=63,y=25)#place(x=230,y=25)
+    panel.place(x=63,y=25)
 
     l3=Label(w,text='Visualizer',fg='white',bg=a)
     lst3=('Calibri (Body)',15)
     l3.config(font=lst3)
-    l3.place(x=230,y=110)#place(x=50,y=110)
+    l3.place(x=230,y=110)
 
     w.mainloop()
 
@@ -753,14 +753,12 @@ def create_views_brightness_graph(number_of_folder_to_open):
         top_10_avg_brightness = np.mean(x[-int(len(x) * 0.1):])
         bottom_10_avg_brightness = np.mean(x[:int(len(x) * 0.1)])
         
-        #plt.text(x[-1], top_10_avg_brightness, "Top 10% Avg Brightness: {:.2f}".format(top_10_avg_brightness), ha='right', va='bottom')
         avg_brightness = np.mean(x)
         plt.text(0.95, 0.90, "Top 10% Avg Brightness: {:.2f}".format(top_10_avg_brightness),
         verticalalignment='top', horizontalalignment='right',
         transform=plt.gca().transAxes,
         color='green', fontsize=8)
 
-        #plt.text(x[-1], bottom_10_avg_brightness, "Bottom 10% Avg Brightness: {:.2f}".format(bottom_10_avg_brightness), ha='right', va='top')
         avg_brightness = np.mean(x)
         plt.text(0.95, 0.85, "Bottom 10% Avg Brightness: {:.2f}".format(bottom_10_avg_brightness),
         verticalalignment='top', horizontalalignment='right',
@@ -1062,7 +1060,6 @@ def update_SQLiteTABLE_dominantColors_10(number_of_row, colorname, RGB):
     conn.close()
     
 def YTlinks(list_of_channel_id1, list_of_search_tearms1, api_key1, amount_of_videos_you_want):
-    #app.PrintInTextBox(list_of_search_tearms1)
     for j in range(len(list_of_search_tearms1)):
         try:
             def get_video_links(search_term):
@@ -1166,9 +1163,6 @@ def ThumbnailDownload():
           #app.PrintInTextBox(line)
     app.PrintInTextBox(f"Number of thumbnails downloaded {counter1}")
     return counter1
-
-    # ./aqz-KE-bpKQ.jpg
-    # https://pypi.org/project/pythumb/
 
 def VideoInformation(API_KEY1):
     counter = 1
@@ -1318,7 +1312,7 @@ class ImageAnalysis:
     def __init__(self, counter):
         self.counter = counter
     
-    # https://www.geeksforgeeks.org/find-most-used-colors-in-image-using-python/
+    #From https://www.geeksforgeeks.org/find-most-used-colors-in-image-using-python/
     def most_common_used_color(self, img):
         # Get width and height of Image
         width, height = img.size
@@ -1367,8 +1361,7 @@ class ImageAnalysis:
             with open('most_common_used_color_in_an_image.txt', 'a') as file:
                 file.write(f'Average RED: {common_color[0]} Average GREEN: {common_color[1]} Average BLUE: {common_color[2]}\n')
                 file.writelines(['\n'])
-            # Print values in desired format
-            #app.PrintInTextBox(f"Average RED: {common_color[0]} Average GREEN: {common_color[1]} Average BLUE: {common_color[2]}")
+
             update_SQLiteTABLE_average_color(i, common_color[0], common_color[1], common_color[2])
             
     def brightness(self, img):
@@ -1390,7 +1383,7 @@ class ImageAnalysis:
             with open('average_brightness_in_an_image.txt', 'a') as file:
                 file.write(f'Average Brightness {average_brightness}\n')
                 file.writelines(['\n'])
-                #app.PrintInTextBox(f'Average Brightness {average_brightness}\n')
+                
             update_SQLiteTABLE_average_brightness(i,average_brightness)
 
     def get_color_name_from_hsl(self, rgb):
@@ -1652,7 +1645,6 @@ class window(CTk):
         self.p = inflect.engine()
         self.title("YTVisualizer | Technology IL ft. Orel")
 
-        #self.iconbitmap("logo.ico")
         e = "AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAClah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+kaBz/pGgc/6RoHP+kaBz/pGgc/6RoHP+kaBz/pGgc/6RoHP+kaBz/pGgc/6RoHP+kaBz/pGgc/6RoHP+kaBz/pGgc/6RoHP+kaBz/pGgc/6RoHP+kaBz/pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWsg/7qNVP/Rs43/1bmW/9W5lv/VuZb/1bmW/9W5lv/VuZb/1bmW/9W5lv/VuZb/1bmW/9W5lv/VuZb/1bmW/9W5lv/VuZb/1bmW/9W5lv/VuZb/0bON/7qNU/+layD/pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6RpHf/Cmmf/+PPt////////////////////////////////////////////////////////////////////////////////////////////////////////////9/Ls/8GZZv+kaR3/pWof/6VqH/+lah//pWof/6VqH/+lah//qG4m/+XUv///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////5NO9/6duJf+lah//pWof/6VqH/+lah//pWof/6VpHv+qcy3/7eHS/////////////////////////v7/9vDp/+3h0v/q28n/59fE/+bVwP/l073/5dO9/+bVwP/n18T/6drI/+zg0P/17+b///7+///////////////////////s4ND/qnIr/6VpHv+lah//pWof/6VqH/+lah//pWke/6tzLf/t4dP//////////////////////+fXw/+1g0b/q3Mt/6pwKf+pbyf/qG4l/6htJP+obST/qG4m/6luJ/+pcCn/q3Is/7SBQ//l1L///////////////////////+zg0P+qciv/pWke/6VqH/+lah//pWof/6VqH/+laR7/q3Mt/+3h0//////////////////+/v3/xZ5u/6RmGv+maR//pmof/6ZqIP+maR//pmkf/6ZqIP+maiD/pmog/6ZqH/+mah//pGYb/8Obav/+/fz/////////////////7ODQ/6pyK/+laR7/pWof/6VqH/+lah//pWof/6VpHv+rcy3/7eHT//////////////////v49f+7jFP/pWgd/6ZqIP+maiD/pmog/6x1MP+qcCn/pWgd/6ZqIP+maiD/pmog/6ZqIP+laB3/uYpR//r39P/////////////////s4ND/qnIr/6VpHv+lah//pWof/6VqH/+lah//pWke/6tzLf/t4dP/////////////////+fbx/7eHTP+laB3/pmog/6ZqIP+laB3/yqZ5/+TSu/+/k13/qW4n/6ZqH/+maiD/pmog/6VoHf+2hUj/+PTv/////////////////+zg0P+qciv/pWke/6VqH/+lah//pWof/6VqH/+laR7/q3Mt/+3h0//////////////////59fD/t4ZK/6VoHf+maiD/pmog/6VoHP/Nq4L///////v59v/bwqT/rXUx/6ZpH/+maiD/pWge/7WDRv/48+3/////////////////7ODQ/6pyK/+laR7/pWof/6VqH/+lah//pWof/6VpHv+rcy3/7eHT//////////////////n18P+3h0v/pWgd/6ZqIP+maiD/pWgc/82sgv/7+fX/4c20/72RWv+obSX/pmog/6ZqIP+laB7/toRH//j07v/////////////////s4ND/qnIr/6VpHv+lah//pWof/6VqH/+lah//pWke/6tzLf/t4dP/////////////////+/j0/7qLUf+laB3/pmog/6ZqIP+laR7/u45W/7+VYP+obib/pWgd/6ZqIP+maiD/pmog/6VoHf+4iU7/+vfy/////////////////+zg0P+qciv/pWke/6VqH/+lah//pWof/6VqH/+laR7/q3Mt/+3h0//////////////////9/Pv/wphl/6RnHP+maiD/pmog/6ZqIP+maR//pWgd/6ZqIP+maiD/pmog/6ZqIP+maiD/pGcc/8CWYv/9/Pr/////////////////7ODQ/6pyK/+laR7/pWof/6VqH/+lah//pWof/6VpHv+rcy3/7eHT///////////////////////fya7/rHQv/6ZrIf+mah//pWke/6VpHv+laB7/pWge/6VpHv+laR7/pmof/6ZrIf+rcy3/3caq///////////////////////s4ND/qnIr/6VpHv+lah//pWof/6VqH/+lah//pWke/6tzLf/t4dP///////////////////////38+v/r3s7/4Muw/9zEp//ZwKD/17yb/9a7mf/Wu5n/17yb/9m/oP/cxKf/4Mqw/+vezf/9+/r//////////////////////+zg0P+qciv/pWke/6VqH/+lah//pWof/6VqH/+laR7/q3Mt/+3h0///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////6dvJ/6lwKP+lah7/pWof/6VqH/+lah//pWof/6VpHv+rcy3/7eHT//////////////////////////////////////////////////////////////////////////////////////////////////////////////////7+/v/Rs4z/pWke/6VqH/+lah//pWof/6VqH/+lah//pWke/6pzLf/t4dL////////////////////////////////////////////////////////////38er/7+TW/+/k1v/v5Nb/7+TW/+/k1v/v5Nb/7+TW/+/k1v/s38//0rWP/6tzLf+laR7/pWof/6VqH/+lah//pWof/6VqH/+lah7/qG8n/+fXw///////////////////////////////////////////////////////9/Ls/7+VYP+qdC3/q3Uv/6t1L/+rdS//q3Uv/6t1L/+rdS//q3Uv/6pyK/+lah//pWke/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+kaR3/x6Jz//v49P////////////////////////////////////////////z6+P/OroX/pWof/6VpHv+laR7/pWke/6VpHv+laR7/pWke/6VpHv+laR7/pWke/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+nbCP/wZhk/9m/n//bw6X/28Ol/9vDpf/bw6X/28Ol/9vDpf/ZwaH/xJ1s/6duJf+lah7/pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+kaBz/pWkd/6VpHv+laR7/pWke/6VpHv+laR7/pWke/6VpHv+kaBz/pWoe/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//pWof/6VqH/+lah//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
         img_data = base64.b64decode(e)
         img = Image.open(io.BytesIO(img_data))
@@ -1807,10 +1799,8 @@ class window(CTk):
         try:
             if self.check.get() == "False":
                 return
-            # Replace YOUR_API_KEY with your actual API key
+            
             API_KEY_ONE = str(self.ApiShowOne.get())[4:-2] 
-
-            # Replace YOUR_API_KEY with your actual API key
             API_KEY_TWO = str(self.ApiShowTwo.get())[4:-2] 
 
             self.PrintInTextBox("The program started running")
@@ -2760,8 +2750,8 @@ class window(CTk):
 
         textbox.configure(width=780, height=430, state="normal")
         textbox.insert("0.0", "Support: \n" + "\n"
-                            "If you need support, you can join our Discord server at https://discord.com/invite/yprMq2jG5s \n" + 
-                            "or send us an email at technologyilemail@gmail.com and we will try and answer you as soon as possible. \n" +
+                            "If you need support, you can join our Discord server at https://discord.com/invite/yprMq2jG5s .\n" + 
+                            " \n" +
                             " \n" + 
                             " \n" + 
                             "By Technology IL \n" + 
@@ -3046,7 +3036,7 @@ class window(CTk):
         self.textbox2.insert("0.0", f"{text} \n")
         self.textbox.configure(state="disabled")
 
-    def makewindow(self):  #my windows
+    def makewindow(self):
 
         # create sidebar frame with widgets
         self.sidebar_frame = CTkFrame(self, width=140, corner_radius=0)
@@ -3086,7 +3076,7 @@ class window(CTk):
 
         # create textbox
         self.textbox = CTkTextbox(self, state="disabled")
-        self.textbox.grid(row=0, column=2, padx=(20, 10), pady=(20, 10), sticky="nsew")#, sticky="nsew"
+        self.textbox.grid(row=0, column=2, padx=(20, 10), pady=(20, 10), sticky="nsew")
 
         # create tabview
         self.tabview = CTkTabview(self, width=450)
@@ -3174,7 +3164,6 @@ class window(CTk):
         # set default values
         self.scaling_optionemenu.set("100%")
 
-        #self.slider_1.configure(command=self.progressbar_2.set)
         self.progressbar_1.configure(mode="indeterminnate", progress_color=["#3B8ED0", "#1F6AA5"])
         self.progressbar_1.start()
 

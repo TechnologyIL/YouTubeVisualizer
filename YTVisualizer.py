@@ -2573,7 +2573,7 @@ class window(CTk):
         textbox.configure(state="disabled")
 
     def Open_link_to_github(self):
-        webbrowser.open('https://github.com/TechnologyIL')
+        webbrowser.open('https://github.com/TechnologyIL/YouTubeVisualizer')
 
     def Data_Storage_window(self):
         window = CTkToplevel(self)

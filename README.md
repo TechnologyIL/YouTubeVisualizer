@@ -1,3 +1,5 @@
+![git hub banner](https://github.com/TechnologyIL/YouTubeVisualizer/assets/123074807/84f8ffe9-c5e3-4325-84c2-51d1a9ea8ffb)
+
 # YouTubeVisualizer
 The YouTubeVisualizer program analyzes YouTube statistics
 
